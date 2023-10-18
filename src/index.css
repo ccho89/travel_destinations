@@ -1,0 +1,86 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    transition: 0.5s;
+
+}
+
+
+.video-bg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.bg-overlay {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    z-index: 0;
+
+}
+
+
+.heading {
+    font-family: Merianda;
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 20px;
+    color: white;
+    font-size: 50px;
+    animation-name: fade;
+    animation-duration: 5s;
+    z-index: 3;
+
+    
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    border-bottom: 2px solid white;
+    z-index: 3;
+    top: 130px;
+}
+
+.dropdown {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 40px;
+    top: 160px;
+    animation: fadeIn 2s infinite alternate;
+}
+
+.picks:hover {
+    transform: translateY(-5px);
+}
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+}
